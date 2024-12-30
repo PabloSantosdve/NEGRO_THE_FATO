@@ -1,28 +1,35 @@
 import Styles from './Header.module.css'
 
 
-function Header(){
+function Header() {
+	return (
+	  <header>
+		<h1 className={Styles.title}>Negro the Fato</h1>
+  
+		<ul>
+			
+		  <li>
+			<a href="#" className={Styles.funk} aria-label='Explorar o gênero FUNK'>
+			  FUNK
+			</a>
+		  </li>
 
-	return(
-		<header>
-			<h1 className={Styles.title}>Negro the Fato</h1>
+		  <li>
+			<a href="#" className={Styles.rap}>
+			  RAP
+			</a>
+		  </li>
 
+		  <li>
+			<a href="#" className={Styles.rb}>
+			  R&B
+			</a>
+		  </li>
 
-		 	<ul>
+		</ul>
 
-				<a href="#" className={Styles.funk}>
-					<li>FUNK</li>
-				</a>
-				<a href="#" className={Styles.rap}>
-					<li>RAP</li>
-				</a>
-				<a href="#" className={Styles.rb}>
-					<li>R&B</li>
-				</a>
+	  </header>
+	);
+  }
 
-			</ul>
-		</header>
-	)
-}
-
-export default Header
+  export default Header

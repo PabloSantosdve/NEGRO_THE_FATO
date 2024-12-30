@@ -1,0 +1,16 @@
+@font-face {
+	font-family: titulo;
+	src: url(../../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+	font-family: texto;
+	src: url(../../fonts/MontserratAlternates-Regular.ttf);
+}
+
+.title{
+	font-family: 'titulo', Arial, Helvetica, sans-serif;
+}
+
+.text{
+	font-family: 'texto', Arial, Helvetica, sans-serif;
+}

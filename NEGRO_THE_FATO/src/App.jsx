@@ -1,5 +1,6 @@
 import './App.css'
 import Header from './Components/layout/Header'
+import BemVindo from './Components/layout/BemVindo'
 
 function App() {
 
@@ -7,6 +8,8 @@ function App() {
     <>
     <Header />
     
+    <BemVindo/>
+
     </>
   )
 }
