@@ -1,6 +1,7 @@
 import styles from './BemVindo.module.css'
 import logo from '../../images/logo.jpg'
 import CapaRap from '../../images/capa rap.jpg'
+import Carrossel from './Carrossel'
 
 function BemVindo(){
 	return(
@@ -32,7 +33,7 @@ function BemVindo(){
 
 			</div>
 
-			
+			<Carrossel />
 		
 		</div>
 

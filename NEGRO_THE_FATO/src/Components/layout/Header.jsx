@@ -1,35 +1,35 @@
-import Styles from './Header.module.css'
-
+import { Link } from 'react-router-dom'; // Importando o Link do React Router
+import Styles from './Header.module.css';
 
 function Header() {
-	return (
-	  <header>
-		<h1 className={Styles.title}>Negro the Fato</h1>
-  
-		<ul>
-			
-		  <li>
-			<a href="#" className={Styles.funk} aria-label='Explorar o gênero FUNK'>
-			  FUNK
-			</a>
-		  </li>
+  return (
+    <header>
+      <h1 className={Styles.title}>Negro the Fato</h1>
 
-		  <li>
-			<a href="#" className={Styles.rap}>
-			  RAP
-			</a>
-		  </li>
+      <ul>
+        {/* Link para a página do gênero FUNK */}
+        <li>
+          <Link to="/funk" className={Styles.funk} aria-label="Explorar o gênero FUNK">
+            FUNK
+          </Link>
+        </li>
 
-		  <li>
-			<a href="#" className={Styles.rb}>
-			  R&B
-			</a>
-		  </li>
+        {/* Link para a página do gênero RAP */}
+        <li>
+          <Link to="/rap" className={Styles.rap}>
+            RAP
+          </Link>
+        </li>
 
-		</ul>
+        {/* Link para a página do gênero R&B */}
+        <li>
+          <Link to="/rb" className={Styles.rb}>
+            R&B
+          </Link>
+        </li>
+      </ul>
+    </header>
+  );
+}
 
-	  </header>
-	);
-  }
-
-  export default Header
+export default Header;

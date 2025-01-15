@@ -14,7 +14,8 @@
   
   .carrosselContent {
     display: flex; /* Exibe as imagens em linha */
-    transition: transform 0.5s ease-in-out; /* Animação suave para a troca de imagens */
+    transition: transform 0.5s ease-in; /* Animação suave para a troca de imagens */
+    margin-bottom: 50px;
   }
   
   .imageLink {
@@ -23,8 +24,8 @@
   }
   
   .image {
-    width: 60%; /* Faz as imagens ocuparem toda a largura */
-    height: 600px; /* Altura fixa para as imagens */
+    width: 90%; /* Faz as imagens ocuparem toda a largura */
+    height: 550px; /* Altura fixa para as imagens */
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
     border-radius: 10px; /* Borda arredondada nas imagens */
     transition: all 0.5s; /* Suaviza a transição de opacidade */
