@@ -12,7 +12,7 @@ function BemVindo(){
 			<div className={styles.first_track}>
 
 				<p className={styles.text}>
-						Bem-vindo ao <strong>Negro The Fato</strong>, o seu portal de descoberta e celebração da música negra! Aqui, você encontrará uma introdução completa ao universo do rap, funk e R&B, explorando as raízes, a evolução e o impacto desses gêneros que moldaram a cultura e a música ao redor do mundo.
+						Bem-vindo a <strong>Negro The Fato</strong>, o seu portal de descoberta e celebração da música negra! Aqui, você encontrará uma introdução completa ao universo do rap, funk e R&B, explorando as raízes, a evolução e o impacto desses gêneros que moldaram a cultura e a música ao redor do mundo.
 				</p>
 
 				<div className={styles.image}>
