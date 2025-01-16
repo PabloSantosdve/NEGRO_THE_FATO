@@ -46,7 +46,7 @@ function Footer() {
         <div className={styles.right}>
           <img src={Logo} alt="Logo da Negro The Fato" />
         </div>
-
+   
       </div>
     </footer>
   );
