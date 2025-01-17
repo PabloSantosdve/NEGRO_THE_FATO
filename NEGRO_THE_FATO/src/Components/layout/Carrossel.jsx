@@ -44,7 +44,7 @@ const Carrossel = () => { // Declaração do componente funcional Carrossel
 
   // Efeito para rotação automática das imagens
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000); // Define um intervalo para chamar a função nextSlide a cada 3 segundos (3000ms)
+    const interval = setInterval(nextSlide, 7000); // Define um intervalo para chamar a função nextSlide a cada 3 segundos (3000ms)
     return () => clearInterval(interval); // Limpa o intervalo quando o componente for desmontado, prevenindo vazamentos de memória
   }, []); // O efeito só é executado uma vez quando o componente é montado (sem dependências)
 
