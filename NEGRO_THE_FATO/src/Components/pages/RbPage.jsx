@@ -1,7 +1,7 @@
 // src/Components/pages/RBPage.js
 import React from 'react';
 
-function RPage() {
+function RBage() {
   return (
     <div>
       <h2>Página do gênero R&B</h2>
@@ -10,4 +10,4 @@ function RPage() {
   );
 }
 
-export default RPage;
+export default RBage;

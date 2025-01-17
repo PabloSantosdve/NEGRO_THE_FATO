@@ -4,8 +4,8 @@ import BemVindo from './Components/layout/BemVindo';
 import Footer from './Components/layout/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Mudança para 'Routes' no React Router v6
 import FunkPage from './Components/pages/FunkPage.jsx'; 
-import RapPage from './Components/pages/RPage.jsx'; 
-import RBPage from './Components/pages/RPage.jsx'; // Caminho correto para o arquivo RBPage.js
+import RapPage from './Components/pages/RapPage.jsx'; 
+import RBPage from './Components/pages/RbPage.jsx'; // Caminho correto para o arquivo RBPage.js
 
 function App() {
   return (
