@@ -4,7 +4,7 @@ import Styles from './Header.module.css';
 function Header() {
   return (
     <header>
-      <h1 className={Styles.title}>Negro the Fato</h1>
+      <h1 className={Styles.title}>NEGRO THE FATO</h1>
 
       <ul>
         {/* Link para a página do gênero FUNK */}
