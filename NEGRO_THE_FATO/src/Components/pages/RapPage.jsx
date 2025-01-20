@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './Pages.module.css'
+import Cartoon from '../../images/RapCartoon.jpg'
+import Cartton2 from '../../images/cartoon2.jpg'
+
 function RapPage() {
   return (
     <div className={styles.container}>
@@ -31,7 +34,7 @@ function RapPage() {
 
 
         <div className={styles.first_image}>
-          <img src="" alt="" />
+          <img src={Cartoon} alt="" />
         </div>
 
         <div  className={styles.first_text}>
@@ -58,7 +61,7 @@ function RapPage() {
         </div>
 
         <div className={styles.first_image}>
-          <img src="" alt="" />
+          <img src={Cartton2} alt="" />
           </div>
       </div>
 
@@ -94,7 +97,7 @@ function RapPage() {
     </p>
 
     <p className={styles.text}>
-    <strong>DJ Kool Herc</strong>, um imigrante jamaicano, trouxe consigo a tradição dos "sound systems" da Jamaica, onde grandes festas eram realizadas ao ar livre com música alta e ritmos pulsantes. Em 11 de agosto de 1973, Herc organizou uma festa no número 1520 da Sedgwick Avenue, que é amplamente reconhecida como o evento de nascimento do hip-hop. Ele utilizou dois toca-discos para prolongar a parte instrumental das músicas, conhecida como "break," que era a favorita dos dançarinos de breakdance. Essa técnica foi fundamental para o desenvolvimento do que viria a ser conhecido como rap.
+    DJ Kool Herc, um imigrante jamaicano, trouxe consigo a tradição dos "sound systems" da Jamaica, onde grandes festas eram realizadas ao ar livre com música alta e ritmos pulsantes. Em 11 de agosto de 1973, Herc organizou uma festa no número 1520 da Sedgwick Avenue, que é amplamente reconhecida como o evento de nascimento do hip-hop. Ele utilizou dois toca-discos para prolongar a parte instrumental das músicas, conhecida como "break," que era a favorita dos dançarinos de breakdance. Essa técnica foi fundamental para o desenvolvimento do que viria a ser conhecido como rap.
     </p>
 
     <p className={styles.text}>
@@ -112,6 +115,10 @@ function RapPage() {
     MCs como Coke La Rock, que colaborou com Kool Herc, foram os primeiros a rimar em festas de hip-hop. A evolução do MCing para o que conhecemos hoje como rap foi rápida, com MCs ganhando mais destaque e as rimas tornando-se cada vez mais complexas e líricas. Essa transição marcou o início do rap como um gênero distinto dentro do movimento hip-hop.
     </p>
 
+    <div className={styles.third_part_image}>
+        <img src="" alt="" />
+      </div>
+
     <h2 className={styles.subtitle_track}> Influências Culturais e musicais</h2>
 
     <p className={styles.text}>
@@ -121,6 +128,10 @@ function RapPage() {
     <p className={styles.text}>
     O rap também foi influenciado por tradições de rima e ritmo que vinham de outras partes do mundo, como o "toasting" jamaicano, onde DJs falavam sobre as batidas, criando uma forma primitiva de rap. Essa fusão de culturas e estilos musicais contribuiu para a criação de um som que era ao mesmo tempo novo e profundamente enraizado nas tradições existentes.
     </p>
+
+    <div className={styles.third_part_image}>
+        <img src="" alt="" />
+      </div>
 
     <h2 className={styles.subtitle_track}> Expansão e globalização</h2>
 
@@ -139,6 +150,10 @@ function RapPage() {
     <p className={styles.text} id={styles.last_part}>
     Hoje, o rap é um fenômeno global, com artistas de todo o mundo utilizando o gênero para expressar suas próprias histórias e culturas. O rap continua a ser uma força vital na música, na cultura e na política, desafiando normas e conectando pessoas de diferentes origens e experiências.
     </p>
+
+    <div className={styles.third_part_image}>
+        <img src="" alt="" />
+      </div>
 
 
     </div>
