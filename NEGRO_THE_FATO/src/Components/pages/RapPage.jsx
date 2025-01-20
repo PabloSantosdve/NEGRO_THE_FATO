@@ -1,9 +1,8 @@
-// src/Components/pages/RapPage.js
 import React from 'react';
-import styles from './Rap.module.css'
+import styles from './Pages.module.css'
 function RapPage() {
   return (
-    <div>
+    <div className={styles.container}>
       
       {/*Parte da playlist de Rap*/}
       <h1 className={styles.name_playlist}>Veja o melhor do Rap</h1>
@@ -22,7 +21,7 @@ function RapPage() {
 
       </div>
 
-{/*First track */}
+{/*First part */}
       <h1 className={styles.title}>RAP</h1>
 
       <h2 className={styles.subtitle}>Conheça um pouco da historia do Rap</h2>
@@ -43,7 +42,7 @@ function RapPage() {
 
       </div>
 
-{/*Second track */}
+{/*Second part */}
 
       <h2 className={styles.subtitle_track}>Origens do Rap</h2>
 

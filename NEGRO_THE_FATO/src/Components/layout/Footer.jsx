@@ -48,6 +48,8 @@ function Footer() {
         </div>
    
       </div>
+
+      <p className={styles.paragrafo}>© 2024 Negro The Fato. Todos os direitos reservados.</p>
     </footer>
   );
 }

@@ -20,6 +20,19 @@
     font-weight: lighter;
 }
 
+
+
+.container a{
+    color: black;
+    font-weight: 800;
+    font-size: 19px;
+    transition: all 0.5s;
+}
+.container a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 191);
+}
+
 /*Playlist*/
 
 .name_playlist{
@@ -30,8 +43,7 @@
     margin-bottom: 30px;
 }
 .conteudo{
-    background-color: brown;
-    width: 90%;
+    width: 96%;
     height: 400px;
     margin: auto;
     margin-bottom: 30px;
@@ -90,7 +102,7 @@
     margin: 35px;
 }
 
-/*Third part*/
+/*Second part*/
 
 .text{
     width: 93%;
@@ -102,13 +114,10 @@
 .third_part_image{
     background-color: gray;
     width: 93.5%;
-    height: 300px;
+    height: 400px;
     margin: auto;
     margin-bottom: 15px;
     border-radius: 10px;
 }
 
-#last_part{
-    margin-bottom: 60px;
-}
 
