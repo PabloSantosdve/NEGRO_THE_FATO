@@ -9,7 +9,17 @@ function RapPage() {
       <h1 className={styles.name_playlist}>Veja o melhor do Rap</h1>
 
       <div className={styles.conteudo}>
-          
+        <iframe 
+            style={{ borderRadius: "12px" }} 
+            src="https://open.spotify.com/embed/playlist/62oPqQKKB3UbXH4serczHH?utm_source=generator" 
+            width="100%" 
+            height="400" 
+            frameBorder="0" 
+            allowFullScreen 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+
       </div>
 
 {/*First track */}
