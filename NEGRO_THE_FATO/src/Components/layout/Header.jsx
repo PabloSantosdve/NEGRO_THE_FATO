@@ -4,7 +4,12 @@ import Styles from './Header.module.css';
 function Header() {
   return (
     <header>
-      <h1 className={Styles.title}>NEGRO THE FATO</h1>
+      {/* O título agora é um Link que leva para a home */}
+      <h1>
+        <Link to="/" className={Styles.title}>
+          NEGRO THE FATO
+        </Link>
+      </h1>
 
       <ul>
         {/* Link para a página do gênero FUNK */}
