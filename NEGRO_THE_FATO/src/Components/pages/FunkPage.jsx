@@ -1,4 +1,5 @@
 import styles from './Pages.module.css'
+import CarrosselFunk from '../../Components/layout/CarrosselFunk'
 
 
 function FunkPage() {
@@ -11,14 +12,16 @@ function FunkPage() {
       <div className={styles.conteudo}>
       <iframe 
         style={{ borderRadius: "12px" }} 
-        src="https://open.spotify.com/embed/playlist/53o61MQeEywOXuM3EGKZfV?utm_source=generator&theme=0" 
+        src="https://open.spotify.com/embed/playlist/53o61MQeEywOXuM3EGKZfV?utm_source=generator" 
         width="100%" 
         height="352" 
         frameBorder="0" 
-        allowFullScreen
+        allowFullScreen 
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
         loading="lazy">
       </iframe>
+
+
       </div>
 
 {/*First part */}
@@ -198,6 +201,8 @@ function FunkPage() {
     <div className={styles.third_part_image}>
         <img src="" alt="" />
     </div>
+
+    <CarrosselFunk />
 
     </div>
   );

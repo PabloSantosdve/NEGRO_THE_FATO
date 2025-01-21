@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Pages.module.css'
-import Cartoon from '../../images/RapCartoon.jpg'
-import Cartton2 from '../../images/cartoon2.jpg'
+import test from '../../images/capa rap.jpg'
+import test2 from '../../images/rap e compromisso.jpg'
+import CarrosselRap from '../../Components/layout/CarrosselRap'
 
 function RapPage() {
   return (
@@ -34,7 +35,7 @@ function RapPage() {
 
 
         <div className={styles.first_image}>
-          <img src={Cartoon} alt="" />
+          <img src={test} alt="" />
         </div>
 
         <div  className={styles.first_text}>
@@ -61,7 +62,7 @@ function RapPage() {
         </div>
 
         <div className={styles.first_image}>
-          <img src={Cartton2} alt="" />
+          <img src={test2} alt="" />
           </div>
       </div>
 
@@ -154,6 +155,8 @@ function RapPage() {
     <div className={styles.third_part_image}>
         <img src="" alt="" />
       </div>
+
+    <CarrosselRap />
 
 
     </div>

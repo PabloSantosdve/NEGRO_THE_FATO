@@ -8,7 +8,6 @@ function RBage() {
          <h1 className={styles.name_playlist}>Veja o melhor do R&B</h1>
    
          <div className={styles.conteudo}>
-          
          <iframe 
             style={{ borderRadius: "12px" }} 
             src="https://open.spotify.com/embed/playlist/5fpdpsV5kLcy8UujMWLnII?utm_source=generator" 
@@ -19,7 +18,6 @@ function RBage() {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
             loading="lazy">
         </iframe>
-
          </div>
    
    {/*First part */}
