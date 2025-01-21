@@ -1,4 +1,5 @@
 import styles from './Pages.module.css'
+import CarrosselRb from '../layout/CarrosselRb'
 
 function RBage() {
   return (
@@ -179,7 +180,7 @@ function RBage() {
        Além disso, o R&B contemporâneo se expandiu para além dos Estados Unidos, com artistas de todo o mundo incorporando elementos do gênero em suas produções. A globalização da música fez com que o R&B se tornasse uma plataforma de expressão para diferentes culturas, ampliando sua importância como uma forma universal de arte e comunicação. A sua conexão com a emoção humana, seja na dor, no amor ou na celebração da vida, faz com que o R&B seja uma música atemporal, que continua a emocionar e inspirar pessoas de todas as idades e origens.
        </p>
    
-       
+       <CarrosselRb />
    
        </div>
   );
