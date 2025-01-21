@@ -8,7 +8,18 @@ function RBage() {
          <h1 className={styles.name_playlist}>Veja o melhor do R&B</h1>
    
          <div className={styles.conteudo}>
-        
+          
+         <iframe 
+            style={{ borderRadius: "12px" }} 
+            src="https://open.spotify.com/embed/playlist/5fpdpsV5kLcy8UujMWLnII?utm_source=generator" 
+            width="100%" 
+            height="352" 
+            frameBorder="0" 
+            allowFullScreen 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+        </iframe>
+
          </div>
    
    {/*First part */}
@@ -125,7 +136,7 @@ function RBage() {
        <h2 className={styles.subtitle_track}>O R&B e o Empoderamento Feminino</h2>
    
        <p className={styles.text}>
-       O R&B também tem sido um importante veículo para a expressão de empoderamento feminino, com muitas artistas usando o gênero para afirmar sua independência, força e identidade. Desde a década de 1960, com ícones como Aretha Franklin e Diana Ross, até as décadas mais recentes com artistas como Beyoncé, Rihanna e Alicia Keys, o R&B sempre foi um espaço para que as mulheres pudessem explorar temas de autoconfiança, amor-próprio e luta contra a opressão.
+       O R&B também tem sido um importante veículo para a expressão de empoderamento feminino, com muitas artistas usando o gênero para afirmar sua independência, força e identidade. Desde a década de 1960, com ícones como Aretha Franklin e Diana Ross, até as décadas mais recentes com artistas como Beyoncé, Rihanna e Alicia Keys, o R&B sempre foi um espaço para que as mulheres pudessem explorar temas de autoconfiança, amor-próprio e luta contra a opressão. 
        </p>
    
        <div className={styles.third_part_image}>

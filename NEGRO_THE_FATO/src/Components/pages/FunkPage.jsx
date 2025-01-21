@@ -2,14 +2,23 @@ import styles from './Pages.module.css'
 
 
 function FunkPage() {
-  return (
+  return ( 
     <div className={styles.container}>
       
       {/*Parte da playlist de Funk*/}
       <h1 className={styles.name_playlist}>Veja o melhor do Funk Brasileiro</h1>
 
       <div className={styles.conteudo}>
-     
+      <iframe 
+        style={{ borderRadius: "12px" }} 
+        src="https://open.spotify.com/embed/playlist/53o61MQeEywOXuM3EGKZfV?utm_source=generator&theme=0" 
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allowFullScreen
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy">
+      </iframe>
       </div>
 
 {/*First part */}
