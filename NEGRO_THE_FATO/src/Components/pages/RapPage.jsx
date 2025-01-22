@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Pages.module.css'
 import test from '../../images/capa rap.jpg'
 import test2 from '../../images/rap e compromisso.jpg'
+import banner from '../../images/cartoon.jpg'
 import CarrosselRap from '../../Components/layout/CarrosselRap'
 
 function RapPage() {
@@ -82,7 +83,7 @@ function RapPage() {
         </p>
 
       <div className={styles.third_part_image}>
-        <img src="" alt="" />
+        <img src={banner} alt="" />
       </div>
 
       </div>
