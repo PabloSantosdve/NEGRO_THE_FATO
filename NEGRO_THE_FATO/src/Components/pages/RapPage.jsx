@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './Pages.module.css'
-import test from '../../images/capa rap.jpg'
-import test2 from '../../images/rap e compromisso.jpg'
+import Capa from '../../images/capa rap.jpg'
+import RapCompromisso from '../../images/rap e compromisso.jpg'
 import banner from '../../images/cartoon.jpg'
+import Banner2 from '../../images/dj cartoon.jpg'
+import Rapper from '../../images/SurgimentoCartoon.jpg'
+import Rapper2 from '../../images/Surgimento_Mcs.jpg'
+import Rapper3 from '../../images/capa rap.jpg'
 import CarrosselRap from '../../Components/layout/CarrosselRap'
 
 function RapPage() {
@@ -36,7 +40,7 @@ function RapPage() {
 
 
         <div className={styles.first_image}>
-          <img src={test} alt="" />
+          <img src={Capa} alt="" />
         </div>
 
         <div  className={styles.first_text}>
@@ -63,7 +67,7 @@ function RapPage() {
         </div>
 
         <div className={styles.first_image}>
-          <img src={test2} alt="" />
+          <img src={RapCompromisso} alt="" />
           </div>
       </div>
 
@@ -91,7 +95,7 @@ function RapPage() {
     <h2 className={styles.subtitle_track}>O Papel dos DJs e das Festas de Rua</h2>
 
     <div className={styles.third_part_image}>
-        <img src="" alt="" />
+        <img src={Banner2} alt="" />
     </div>
 
     <p className={styles.text}>
@@ -118,7 +122,7 @@ function RapPage() {
     </p>
 
     <div className={styles.third_part_image}>
-        <img src="" alt="" />
+        <img src={Rapper} alt="" />
       </div>
 
     <h2 className={styles.subtitle_track}> Influências Culturais e musicais</h2>
@@ -132,7 +136,7 @@ function RapPage() {
     </p>
 
     <div className={styles.third_part_image}>
-        <img src="" alt="" />
+        <img src={Rapper2} alt="" />
       </div>
 
     <h2 className={styles.subtitle_track}> Expansão e globalização</h2>
@@ -154,7 +158,7 @@ function RapPage() {
     </p>
 
     <div className={styles.third_part_image}>
-        <img src="" alt="" />
+        <img src={Rapper3} alt="" />
       </div>
 
     <CarrosselRap />
