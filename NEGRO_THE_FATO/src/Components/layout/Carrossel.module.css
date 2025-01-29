@@ -1,118 +1,144 @@
+@font-face {
+  font-family: 'titulo';
+  src: url(../../fonts/BebasNeue-Regular.ttf); /* Fonte customizada */
+}
+
 .carrosselContainer {
-    width: 80%; /* Largura do carrossel */
-    margin: auto; /* Centraliza o carrossel */
-    position: relative; /* Para posicionar as setas */
-    overflow: hidden; /* Esconde as imagens que saem do container */
-    border-radius: 10px; /* Borda arredondada */
+  width: 80%; /* Largura do carrossel */
+  margin: auto; /* Centraliza o carrossel */
+  position: relative; /* Para posicionar as setas */
+  overflow: hidden; /* Esconde as imagens que saem do container */
+  border-radius: 10px; /* Borda arredondada */
+}
+
+.title {
+  text-align: center; /* Centraliza o título */
+  font-size: 2em; /* Tamanho da fonte do título */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  font-family: 'titulo', Arial, Helvetica, sans-serif;
+}
+
+.carrosselContent {
+  display: flex; /* Exibe as imagens em linha */
+  transition: transform 0.5s ease-in-out; /* Animação suave para a troca de imagens */
+  margin-bottom: 50px;
+}
+
+.imageLink {
+  flex: 0 0 100%; /* Cada imagem ocupa 100% da largura do carrossel */
+  text-align: center; /* Centraliza a imagem */
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 90%; /* Faz as imagens ocuparem toda a largura */
+  height: 550px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+  border-radius: 10px; /* Borda arredondada nas imagens */
+  transition: all 0.5s; /* Suaviza a transição de opacidade */
+}
+
+/* Efeito de hover nas imagens */
+.image:hover {
+  transform: scale(1.08); /* Aumenta a imagem ao passar o mouse */
+}
+
+.imageTitle {
+  position: absolute;
+  bottom: 20px; /* Coloca o título na parte inferior da imagem */
+  left: 50%; /* Centraliza o título horizontalmente */
+  transform: translateX(-50%); /* Ajusta para que o título esteja completamente centralizado */
+  font-size: 24px;
+  color: white;
+  background-color: rgb(0, 0, 0); /* Fundo semi-transparente para melhorar a legibilidade */
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 5; /* Garante que o título fique sobre a imagem */
+  font-family: 'titulo', Arial, Helvetica, sans-serif;
+  
+}
+
+
+.arrowLeft,
+.arrowRight {
+  position: absolute; /* Posiciona as setas dentro do carrossel */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajuste de alinhamento */
+  color: rgb(0, 0, 0); /* Cor das setas */
+  border: none; /* Remove a borda das setas */
+  padding: 10px; /* Espaçamento interno */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  border-radius: 20px; /* Torna as setas circulares */
+  z-index: 10; /* Garante que as setas fiquem sobre as imagens */
+}
+
+.arrowLeft {
+  left: 10px; /* Posiciona a seta à esquerda */
+}
+
+.arrowRight {
+  right: 10px; /* Posiciona a seta à direita */
+}
+
+/* Responsividade para telas médias (tablets) */
+@media (max-width: 1024px) {
+  .carrosselContainer {
+    width: 90%; /* Reduz a largura do carrossel */
+  }
+
+  .image {
+    width: 80%; /* As imagens ocupam mais largura em tablets */
+    height: 400px; /* Reduz a altura das imagens */
   }
   
   .title {
-    text-align: center; /* Centraliza o título */
-    font-size: 1.5em; /* Tamanho da fonte do título */
-    margin-bottom: 20px; /* Espaçamento inferior */
+    font-size: 1.3em; /* Ajusta o tamanho do título */
   }
-  
-  .carrosselContent {
-    display: flex; /* Exibe as imagens em linha */
-    transition: transform 0.5s ease-in; /* Animação suave para a troca de imagens */
-    margin-bottom: 50px;
-  }
-  
-  .imageLink {
-    flex: 0 0 100%; /* Cada imagem ocupa 100% da largura do carrossel */
-    text-align: center; /* Centraliza a imagem */
-  }
-  
-  .image {
-    width: 90%; /* Faz as imagens ocuparem toda a largura */
-    height: 550px; /* Altura fixa para as imagens */
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
-    border-radius: 10px; /* Borda arredondada nas imagens */
-    transition: all 0.5s; /* Suaviza a transição de opacidade */
-  }
-  
-  /* Efeito de hover nas imagens */
-  .image:hover {
-    transform: scale(1.08); /* Aumenta a imagem ao passar o mouse */
-  }
-  
+
   .arrowLeft,
   .arrowRight {
-    position: absolute; /* Posiciona as setas dentro do carrossel */
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajuste de alinhamento */
-    color: rgb(0, 0, 0); /* Cor das setas */
-    border: none; /* Remove a borda das setas */
-    padding: 10px; /* Espaçamento interno */
-    cursor: pointer; /* Muda o cursor ao passar o mouse */
-    border-radius: 20px; /* Torna as setas circulares */
-    z-index: 10; /* Garante que as setas fiquem sobre as imagens */
+    padding: 8px; /* Reduz o tamanho das setas */
   }
-  
-  .arrowLeft {
-    left: 10px; /* Posiciona a seta à esquerda */
+}
+
+/* Responsividade para telas pequenas (dispositivos móveis) */
+@media (max-width: 768px) {
+  .carrosselContainer {
+    width: 100%; /* O carrossel ocupa 100% da tela */
   }
-  
+
+  .image {
+    width: 90%; /* As imagens ocupam quase toda a tela */
+    height: 300px; /* Reduz ainda mais a altura das imagens */
+  }
+
+  .title {
+    font-size: 1.2em; /* Ajusta o tamanho do título */
+  }
+
+  .arrowLeft,
   .arrowRight {
-    right: 10px; /* Posiciona a seta à direita */
+    display: none; /* Esconde as setas em dispositivos móveis */
   }
-  
-  /* Responsividade para telas médias (tablets) */
-  @media (max-width: 1024px) {
-    .carrosselContainer {
-      width: 90%; /* Reduz a largura do carrossel */
-    }
-  
-    .image {
-      width: 80%; /* As imagens ocupam mais largura em tablets */
-      height: 400px; /* Reduz a altura das imagens */
-    }
-    
-    .title {
-      font-size: 1.3em; /* Ajusta o tamanho do título */
-    }
-  
-    .arrowLeft,
-    .arrowRight {
-      padding: 8px; /* Reduz o tamanho das setas */
-    }
+}
+
+/* Responsividade para telas muito pequenas (dispositivos móveis, como celulares antigos) */
+@media (max-width: 480px) {
+  .image {
+    width: 100%; /* As imagens ocupam 100% da largura da tela */
+    height: 200px; /* Reduz ainda mais a altura das imagens */
   }
-  
-  /* Responsividade para telas pequenas (dispositivos móveis) */
-  @media (max-width: 768px) {
-    .carrosselContainer {
-      width: 100%; /* O carrossel ocupa 100% da tela */
-    }
-  
-    .image {
-      width: 90%; /* As imagens ocupam quase toda a tela */
-      height: 300px; /* Reduz ainda mais a altura das imagens */
-    }
-  
-    .title {
-      font-size: 1.2em; /* Ajusta o tamanho do título */
-    }
-  
-    .arrowLeft,
-    .arrowRight {
-      display: none;
-    }
+
+  .title {
+    font-size: 1em; /* Ajusta o título para telas muito pequenas */
   }
-  
-  /* Responsividade para telas muito pequenas (dispositivos móveis, como celulares antigos) */
-  @media (max-width: 480px) {
-    .image {
-      width: 100%; /* As imagens ocupam 100% da largura da tela */
-      height: 200px; /* Reduz ainda mais a altura das imagens */
-    }
-  
-    .title {
-      font-size: 1em; /* Ajusta o título para telas muito pequenas */
-    }
-  
-    .arrowLeft,
-    .arrowRight {
-      display: none;
-    }
+
+  .arrowLeft,
+  .arrowRight {
+    display: none; /* Esconde as setas em dispositivos móveis pequenos */
   }
-  
+}
