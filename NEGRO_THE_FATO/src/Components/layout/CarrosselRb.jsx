@@ -1,96 +1,132 @@
-import React, { useEffect, useState } from 'react'; // Importa React e os hooks useEffect e useState
-import styles from './Carrossel.module.css'; // Importa o arquivo de estilos modularizados (CSS Modules)
+import React, { useEffect, useState } from 'react'; 
+import styles from './Carrossel.module.css'; 
 
-const Carrossel = () => { // Declaração do componente funcional Carrossel
-  const [currentIndex, setCurrentIndex] = useState(0); // Cria o estado currentIndex para controlar a imagem exibida (começa em 0)
-  const [isTransitioning, setIsTransitioning] = useState(false); // Cria o estado isTransitioning para controlar a transição suave (inicia como falso)
+import image1 from '../../images/Rap/Racionais Carrossel.jpg';
+import image2 from '../../images/Rap/Ye Carrossel.jpg';
+import image3 from '../../images/Rap/jayz carrossel.jpg';
+import image4 from '../../images/Rap/50 cent carrossel.jpg';
+import image5 from '../../images/Rap/kendrick carrossel.jpg';
+import image6 from '../../images/Rap/Bk carrossel.jpg';
+import image7 from '../../images/Rap/djonga carrossel.jpg';
+import image8 from '../../images/Rap/matue carrossel.jpg';
 
-  // Array de objetos com informações sobre cada imagem do carrossel (URL da imagem e link)
+
+
+
+const Carrossel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
   const images = [
     {
-      img: 'https://i.pinimg.com/736x/74/c6/8b/74c68b169212a6790b324514d486a748.jpg', // URL da primeira imagem
-      link: '', // Link vazio (pode ser preenchido conforme necessário)
+      img: image1, // Imagem importada
+      title: 'Racionais MC\'s', // Título da imagem
+      link: 'https://www.youtube.com/@RacionaisTV/videos',
     },
     {
-      img: 'https://i.pinimg.com/736x/ae/2a/88/ae2a8816a9bfadf357e9835ed63fa1ce.jpg', // URL da segunda imagem
-      link: '', // Link vazio (pode ser preenchido conforme necessário)
+      img: image2,
+      title: 'Kanye West (YE)',
+      link: 'https://www.youtube.com/@kanyewest/videos',
     },
     {
-      img: 'https://i.pinimg.com/736x/7a/0b/f6/7a0bf6dcdbcbdd00ad12b7244df6f28c.jpg', // URL da terceira imagem
-      link: '', // Link vazio (pode ser preenchido conforme necessário)
+      img: image3,
+      title: 'Jay Z',
+      link: 'https://www.youtube.com/@jayzslifeandtimes/videos',
     },
-    
+    {
+      img: image4,
+      title: '50 cent',
+      link: 'https://www.youtube.com/@jayzslifeandtimes/videos',
+    },
+    {
+      img: image5,
+      title: 'Kendrick lamar ',
+      link: 'https://www.youtube.com/@kendricklamar/videos',
+    },
+    {
+      img: image6,
+      title: 'BK',
+      link: 'https://www.youtube.com/@BKttlapa/videoss',
+    },
+    {
+      img: image7,
+      title: 'Djonga',
+      link: 'https://www.youtube.com/@DjongaGE/videos',
+    },
+    {
+      img: image8,
+      title: 'Matue',
+      link: 'https://www.youtube.com/channel/UCYF3HLy2nzDREEE50KbOnKA',
+    },
   ];
 
-  // Função para avançar para a próxima imagem
-  const nextSlide = () => { 
-    setIsTransitioning(true); // Ativa a transição suave para indicar que a troca de imagem está em andamento
-    setTimeout(() => { // Define um tempo de espera para que a transição ocorra antes de mudar a imagem
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Atualiza o índice para a próxima imagem, voltando para a primeira após a última
-      setIsTransitioning(false); // Desativa a transição depois que a mudança de imagem ocorre
-    }, 500); // Tempo de espera de 500ms para a animação da transição
+  const nextSlide = () => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setIsTransitioning(false);
+    }, 500);
   };
 
-  // Função para retroceder para a imagem anterior
   const prevSlide = () => {
-    setIsTransitioning(true); // Ativa a transição suave para indicar que a troca de imagem está em andamento
-    setTimeout(() => { // Define um tempo de espera para que a transição ocorra antes de mudar a imagem
+    setIsTransitioning(true);
+    setTimeout(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1 // Retrocede ao índice anterior, voltando para a última imagem se estiver na primeira
+        prevIndex === 0 ? images.length - 1 : prevIndex - 1
       );
-      setIsTransitioning(false); // Desativa a transição após a mudança de imagem
-    }, 500); // Tempo de espera de 500ms para a animação da transição
+      setIsTransitioning(false);
+    }, 500);
   };
 
-  // Efeito para rotação automática das imagens
   useEffect(() => {
-    const interval = setInterval(nextSlide, 7000); // Define um intervalo para chamar a função nextSlide a cada 3 segundos (3000ms)
-    return () => clearInterval(interval); // Limpa o intervalo quando o componente for desmontado, prevenindo vazamentos de memória
-  }, []); // O efeito só é executado uma vez quando o componente é montado (sem dependências)
+    const interval = setInterval(nextSlide, 7000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className={styles.carrosselContainer}> {/* Container principal do carrossel com estilo importado */}
-      <h2 className={styles.title}>Conheça os melhores artistas do R&B</h2> {/* Título do carrossel, com estilo aplicado */}
+    <div className={styles.carrosselContainer}>
+      <h2 className={styles.title}>Conheça os melhores artistas</h2>
 
       <div
-        className={styles.carrosselContent} // Container das imagens, com estilo aplicado
+        className={styles.carrosselContent}
         style={{
-          transform: `translateX(-${currentIndex * 100}%)`, // Muda a posição das imagens com base no currentIndex (movimento horizontal)
-          transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none', // Aplica a transição suave quando isTransitioning é verdadeiro
+          transform: `translateX(-${currentIndex * 100}%)`,
+          transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none',
         }}
       >
-        {/* Mapeia o array de imagens e renderiza cada imagem com seu link */}
         {images.map((image, index) => (
           <a
-            key={index} // A chave única para cada elemento da lista
-            href={image.link} // Link associado à imagem (pode ser vazio ou preenchido conforme necessidade)
-            target="_blank" // Define que o link será aberto em uma nova aba
-            rel="noopener noreferrer" // Melhora a segurança ao abrir links em nova aba
-            className={styles.imageLink} // Estilo para o link em volta da imagem
+            key={index}
+            href={image.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.imageLink}
           >
-            <img
-              src={image.img} // Define a URL da imagem
-              alt={`Slide ${index + 1}`} // Texto alternativo para a imagem (para acessibilidade)
-              className={styles.image} // Estilo para a imagem
-              style={{
-                opacity: currentIndex === index ? 1 : 0.5, // Aplica opacidade maior para a imagem atual e menor para as outras
-              }}
-            />
+            <div className={styles.imageContainer}>
+              <img
+                src={image.img}
+                alt={`Slide ${index + 1}`}
+                className={styles.image}
+                style={{
+                  opacity: currentIndex === index ? 1 : 0.5,
+                }}
+              />
+              {/* Título sobre a imagem */}
+              <div className={styles.imageTitle}>{image.title}</div>
+            </div>
           </a>
         ))}
       </div>
 
-      {/* Botão de navegação para a esquerda */}
       <button className={styles.arrowLeft} onClick={prevSlide}>
-        &#10096; {/* Ícone de seta para a esquerda */}
+        &#10096;
       </button>
 
-      {/* Botão de navegação para a direita */}
       <button className={styles.arrowRight} onClick={nextSlide}>
-        &#10097; {/* Ícone de seta para a direita */}
+        &#10097;
       </button>
     </div>
   );
 };
 
-export default Carrossel; // Exporta o componente Carrossel para ser usado em outros lugares do aplicativo
+export default Carrossel;

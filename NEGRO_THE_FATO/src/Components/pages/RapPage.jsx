@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Pages.module.css'
-import Capa from '../../images/capa rap.jpg'
-import RapCompromisso from '../../images/rap e compromisso.jpg'
-import banner from '../../images/cartoon.jpg'
-import Banner2 from '../../images/dj cartoon.jpg'
-import Rapper from '../../images/SurgimentoCartoon.jpg'
-import Rapper2 from '../../images/Surgimento_Mcs.jpg'
-import Rapper3 from '../../images/capa rap.jpg'
+import Capa from '../../images/Rap/capa rap.jpg'
+import RapCompromisso from '../../images/Rap/cartoon.jpg'
+import banner from '../../images/Rap/crise no bronx.jpg'
+import Banner2 from '../../images/Rap/dj cartoon.jpg'
+import Rapper from '../../images/Rap/Eazy.jpg'
+import Rapper2 from '../../images/Rap/Surgimento_Mcs.jpg'
+import Rapper3 from '../../images/Rap/kendrick.jpg'
 import CarrosselRap from '../../Components/layout/CarrosselRap'
 
 function RapPage() {

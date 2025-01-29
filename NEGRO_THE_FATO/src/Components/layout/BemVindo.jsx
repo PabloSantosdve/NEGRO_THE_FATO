@@ -1,6 +1,6 @@
 import styles from './BemVindo.module.css'
 import logo from '../../images/logo.jpg'
-import CapaRap from '../../images/capa rap.jpg'
+import CapaRap from '../../images/Rap/capa rap.jpg'
 import Carrossel from './Carrossel'
 
 function BemVindo(){

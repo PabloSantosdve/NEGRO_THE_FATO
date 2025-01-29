@@ -9,6 +9,7 @@
   position: relative; /* Para posicionar as setas */
   overflow: hidden; /* Esconde as imagens que saem do container */
   border-radius: 10px; /* Borda arredondada */
+  
 }
 
 .title {
@@ -17,7 +18,7 @@
   margin-bottom: 20px; /* Espaçamento inferior */
   font-family: 'titulo', Arial, Helvetica, sans-serif;
 }
-
+ 
 .carrosselContent {
   display: flex; /* Exibe as imagens em linha */
   transition: transform 0.5s ease-in-out; /* Animação suave para a troca de imagens */

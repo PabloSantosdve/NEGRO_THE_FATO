@@ -4,6 +4,8 @@ import styles from './Carrossel.module.css';
 import image1 from '../../images/Rap/Racionais Carrossel.jpg';
 import image2 from '../../images/Rap/Ye Carrossel.jpg';
 import image3 from '../../images/Rap/james brown carrossel.jpg';
+import image4 from '../../images/Funk/Hariel.jpg';
+
 
 const Carrossel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,6 +26,11 @@ const Carrossel = () => {
       img: image3,
       title: 'James Brown',
       link: 'https://www.youtube.com/@JamesBrownOfficial/videos',
+    },
+    {
+      img: image4,
+      title: 'Hariel',
+      link: 'https://www.youtube.com/@MCHarielOriginal/videos',
     },
   ];
 
