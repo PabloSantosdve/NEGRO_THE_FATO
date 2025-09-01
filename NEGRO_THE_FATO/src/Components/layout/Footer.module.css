@@ -16,8 +16,8 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     background-color: #d9d9d9;
-    height: 220px;
-    padding: 20px;
+    height: 300px;
+    padding: 30px;
 }
 
 
@@ -32,7 +32,7 @@ footer{
 /*Lado esquerdo*/
 
 .left {
-    width: 28%;
+    width: 30%;
     display: flex;
     flex-direction: column; /* Alinha os itens verticalmente */
     align-items: flex-start; /* Alinha à esquerda */
@@ -40,12 +40,27 @@ footer{
     gap: 15px;
 }
 .left a{
+    position: relative;
     color: black;
-    transition: all 0.5s;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 } 
 
-.left a:hover{
-    text-decoration: underline;
+.left a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: black;
+    transition: width 0.3s;
+    bottom: 0;
+    left: 0;
+}
+
+.left a:hover::after {
+    width: 100%;
 }
 
 /*Centro ( redes sociais)*/

@@ -14,7 +14,7 @@ const Carrossel = () => {
   const images = [
     {
       img: image1, // Imagem importada
-      title: 'Racionais MC\'s', // Título da imagem
+      title: 'Racionais MC', // Título da imagem
       link: 'https://www.youtube.com/@RacionaisTV/videos',
     },
     {
@@ -53,7 +53,7 @@ const Carrossel = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 7000);
+    const interval = setInterval(nextSlide, 8000);
     return () => clearInterval(interval);
   }, []);
 

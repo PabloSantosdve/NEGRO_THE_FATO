@@ -45,7 +45,8 @@
 
 /* Efeito de hover nas imagens */
 .image:hover {
-  transform: scale(1.08); /* Aumenta a imagem ao passar o mouse */
+  transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+  box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.61);;
 }
 
 .imageTitle {
@@ -78,11 +79,11 @@
 }
 
 .arrowLeft {
-  left: 10px; /* Posiciona a seta à esquerda */
+  left: 80px; /* Posiciona a seta à esquerda */
 }
 
 .arrowRight {
-  right: 10px; /* Posiciona a seta à direita */
+  right: 80px; /* Posiciona a seta à direita */
 }
 
 /* Responsividade para telas médias (tablets) */

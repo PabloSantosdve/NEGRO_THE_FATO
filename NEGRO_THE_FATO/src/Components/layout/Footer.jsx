@@ -28,7 +28,6 @@ function Footer() {
         {/* Redes sociais */}
         <div className={styles.center}>
           <div className={styles.redes}>
-            <p>Redes Sociais</p>
             <ul className={styles.redes_icons}>
               <li>
                 <a href="https://www.instagram.com/negrothefato_/" target="_blank" rel="noopener noreferrer">
