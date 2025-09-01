@@ -3,7 +3,8 @@ import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import Logo from '../../images/NEGRO THE FATO.png';
 
 function Footer() {
-  return (
+  return ( 
+    
     <footer>
       <div className={styles.top}>
         <div className={styles.left}>

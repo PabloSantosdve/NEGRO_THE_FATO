@@ -42,7 +42,7 @@ footer{
 .left a{
     color: black;
     transition: all 0.5s;
-}
+} 
 
 .left a:hover{
     text-decoration: underline;
